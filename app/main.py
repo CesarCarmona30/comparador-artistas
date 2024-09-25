@@ -150,9 +150,6 @@ artist_2_name = input("Introduce el nombre del segundo artista: ")
 artist_1_id = search_artist(token, artist_1_name)
 artist_2_id = search_artist(token, artist_2_name)
 
-print(artist_1_id)
-print(artist_2_id)
-
 # 3. Obtención de datos de los artistas
 
 # 3.1. Seguidores y popularidad
@@ -197,7 +194,7 @@ else:
 
 # 4.3. Comparación de canciones más populares
 print(f"\nComparación de canciones más populares:\n")
-print(f"Canción {top_track_artist_1['name']} ({artist_1['name']}): {top_track_artist_1['popularity']} de popularidad.")
+print(f"Canción popular actual {top_track_artist_1['name']} ({artist_1['name']}): {top_track_artist_1['popularity']} de popularidad.")
 print(f"Canción {top_track_artist_2['name']} ({artist_2['name']}): {top_track_artist_2['popularity']} de popularidad.")
 
 if top_track_artist_1["popularity"] > top_track_artist_2["popularity"]:
