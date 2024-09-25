@@ -150,6 +150,9 @@ artist_2_name = input("Introduce el nombre del segundo artista: ")
 artist_1_id = search_artist(token, artist_1_name)
 artist_2_id = search_artist(token, artist_2_name)
 
+print(artist_1_id)
+print(artist_2_id)
+
 # 3. Obtención de datos de los artistas
 
 # 3.1. Seguidores y popularidad
