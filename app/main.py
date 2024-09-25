@@ -1,9 +1,13 @@
 import requests
 import base64
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Constantes de autenticación de la API de Spotify
-CLIENT_ID = "Mi id de cliente"
-CLIENT_SECRET = "mi cliente secreto"
+CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 
 
 def get_token() -> str:
